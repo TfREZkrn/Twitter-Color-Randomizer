@@ -1,4 +1,4 @@
-from PIL import Image
+from PIL import Image #Originally made by github: TfREZkrn, twitter: @Ship_dit
 import random
 import time
 
