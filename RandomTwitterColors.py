@@ -27,7 +27,7 @@ def get_pixel(image, i, j):
     return pixel
 
 def change_color(path):
-    image= Image.open("/Users/pasta/Desktop/twitter_logo.png")
+    image= Image.open(path)
     width, height = image.size
 
     new = create_image(width,height)
@@ -41,16 +41,16 @@ def change_color(path):
             pixel = get_pixel(image, i, j)
 
             red =   pixel[0]
-            green = pixel[1]
-            blue =  pixel[2]
+            green = pixel[1] #if you want to run it on a computer that isn't $10000+ you can comment this out
+            blue =  pixel[2] #comment this out
 
             print(str(red)+" "+str(green)+" "+str(blue))
 
-            if (red>10 and green>10 and blue>10): 
+            if (red>10 and green>10 and blue>10): #and change this to if (red>10):
                 pixels[i, j] = (mred,mgreen,mblue)
 
             else:
-                pixels[i, j] = (255,255,255) #76 is red 4 is green etc
+                pixels[i, j] = (255,255,255) #makes it white
 
 
     save_image(new, "hello")
