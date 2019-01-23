@@ -56,4 +56,4 @@ def change_color(path):
     save_image(new, "hello")
     return new
 
-change_color("/Users/pasta/Desktop/twitter_logo.png")
+change_color("") #PUT THE PATH TO THE TWITTER LOGO HERE
